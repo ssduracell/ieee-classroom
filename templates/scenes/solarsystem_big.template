@@ -1,0 +1,44 @@
+<!-- Earth -->
+<a-obj-model src="#Earth" mtl="#Earth_material" scale="0.3 0.3 0.3" position="0 1.4 3518.64">
+
+  <!-- Mercury -->
+  <a-entity>
+    <a-entity obj-model="obj:#Mercury; mtl:#Mercury_material" position="0 0 -7188.77" scale="0.382487 0.382487 0.382487"></a-entity>
+  </a-entity>
+
+  <!-- Venus -->
+  <a-entity>
+    <a-entity obj-model="obj:#Venus; mtl:#Venus_material" position="0 0 -3245.53" scale="0.948887 0.948887 0.948887"></a-entity>
+  </a-entity>
+
+  <!-- Mars -->
+  <a-entity>
+    <a-entity obj-model="obj:#Mars; mtl:#Mars_material" position="0 0 6138.29" scale="0.532455 0.532455 0.532455"></a-entity
+  </a-entity>
+
+  <!-- Jupiter -->
+  <a-entity>
+    <a-obj-model src="#Jupiter" mtl="#Jupiter_material" position="0 0 49310.13" scale="11.20916 11.20916 11.20916"></a-obj-model>
+  </a-entity>
+
+  <!-- Saturn -->
+  <a-entity>
+    <a-obj-model src="#Saturn" mtl="#Saturn_material" position="0 0 100650.70" scale="9.449357 9.449357 9.449357"></a-obj-model>
+  </a-entity>
+
+  <!-- Uranus -->
+  <a-entity>
+    <a-obj-model src="#Uranus" mtl="#Uranus_material" position="0 0 213460.30" scale="4.007369 4.007369 4.007369"></a-obj-model>
+  </a-entity>
+
+  <!-- Neptune -->
+  <a-entity>
+    <a-obj-model src="#Neptune" mtl="#Neptune_material" position="0 0 340663.20" scale="3.882722 3.882722 3.882722"></a-obj-model>
+  </a-entity>
+
+  <!-- Sun -->
+  <a-entity>
+    <a-obj-model src="#Sun" mtl="#Sun_material" position="0 0 -11727.81" scale="109.0781 109.0781 109.0781"></a-obj-model>
+  </a-entity>
+
+</a-obj-model>

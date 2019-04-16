@@ -1,0 +1,23 @@
+<a-obj-model src="#classroom_obj" mtl="#classroom_mat"></a-obj-model>
+<a-obj-model src="#chair_obj" mtl="#chair_mat" position="2 0 -2.5" rotation="0 -90 0"></a-obj-model>
+<a-obj-model src="#teacherDesk_obj" mtl="#teacherDesk_mat" position="2 0 -2"></a-obj-model>
+
+<a-entity layout="type: box; marginColumn: 2; marginRow: 1.25; plane: xz; columns: 3" position="-2 0 1">
+  <a-entity template="src: templates/scenes/student_table.template"></a-entity>
+  <a-entity template="src: templates/scenes/student_table.template"></a-entity>
+  <a-entity template="src: templates/scenes/student_table.template"></a-entity>
+  <a-entity template="src: templates/scenes/student_table.template"></a-entity>
+  <a-entity template="src: templates/scenes/student_table.template"></a-entity>
+  <a-entity template="src: templates/scenes/student_table.template"></a-entity>
+  <a-entity template="src: templates/scenes/student_table.template"></a-entity>
+  <a-entity template="src: templates/scenes/student_table.template"></a-entity>
+  <a-entity template="src: templates/scenes/student_table.template"></a-entity>
+  <a-entity template="src: templates/scenes/student_table.template"></a-entity>
+  <a-entity template="src: templates/scenes/student_table.template"></a-entity>
+  <a-entity template="src: templates/scenes/student_table.template"></a-entity>
+</a-entity>
+
+<a-obj-model src="#wallClock_obj" mtl="#wallClock_mat" position="1 2.6 -3.25"></a-obj-model>
+
+<img id="natureSky" src="/pictures/sky/nature.jpg" crossorigin="anonymous" />
+<a-sky src="#natureSky" rotation="0 -90 0"></a-sky>

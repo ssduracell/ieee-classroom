@@ -1,0 +1,15 @@
+<a-cone rotation="180 0 0" position="0 0.5 1" scale="0.25 1 0.25" color="green" class="locator" clickable random-location></a-cone>
+<a-cone rotation="180 0 0" position="0 0.5 1" scale="0.25 1 0.25" color="green" class="locator" clickable random-location></a-cone>
+<a-cone rotation="180 0 0" position="0 0.5 1" scale="0.25 1 0.25" color="green" class="locator" clickable random-location></a-cone>
+<a-cone rotation="180 0 0" position="0 0.5 1" scale="0.25 1 0.25" color="green" class="locator" clickable random-location></a-cone>
+
+<img id="grid" src="/pictures/student/grid.png" crossorigin="anonymous">
+<img id="natureSky" src="/pictures/sky/nature.jpg" crossorigin="anonymous" />
+
+<!--Ground plane-->
+<a-entity position="0 0 0"
+  geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0"
+  material="src: #grid; repeat: 10000 10000; transparent: true; metalness:0.6; roughness: 0.4; sphericalEnvMap: #natureSky;"></a-entity>
+
+<!--Sky animated with snow-->
+<a-sky src="#natureSky" rotation="0 -90 0"></a-sky>

@@ -1,0 +1,65 @@
+<img id="stars_milky_way" src="pictures/solarsystem/stars_milky_way.jpg">
+
+<!-- Sun -->
+<a-obj-model src="#Sun" mtl="#Sun_material" scale="15 15 15">
+  <!-- Mercury -->
+  <a-entity>
+    <a-entity obj-model="obj:#Mercury; mtl:#Mercury_material" position="1.577406 0 0" scale="0.003507 0.003507 0.003507"></a-entity>
+    <a-animation attribute="rotation" dur="8000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+  </a-entity>
+  <a-torus radius="1.577406" radius-tubular="0.0001" segments-tubular="64" rotation="90 0 0"></a-torus>
+
+  <!-- Venus -->
+  <a-entity>
+    <a-entity obj-model="obj:#Venus; mtl:#Venus_material" position="0 0 1.644652" scale="0.008699 0.008699 0.008699"></a-entity>
+    <a-animation attribute="rotation" dur="16000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+  </a-entity>
+  <a-torus radius="1.644652" radius-tubular="0.0001" segments-tubular="64" rotation="90 0 0"></a-torus>
+
+  <!-- Earth -->
+  <a-entity>
+    <a-entity obj-model="obj:#Earth; mtl:#Earth_material" position="0 0 1.7" scale="0.009168 0.009168 0.009168"></a-entity>
+    <a-animation attribute="rotation" dur="30000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+  </a-entity>
+  <a-torus radius="1.7" radius-tubular="0.0001" segments-tubular="64" rotation="90 0 0"></a-torus>
+
+  <!-- Mars -->
+  <a-entity>
+    <a-entity obj-model="obj:#Mars; mtl:#Mars_material" position="0 0 1.804679" scale="0.004881 0.004881 0.004881"></a-entity>
+    <a-animation attribute="rotation" dur="60000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+  </a-entity>
+  <a-torus radius="1.804679" radius-tubular="0.0001" segments-tubular="64" rotation="90 0 0"></a-torus>
+
+  <!-- Jupiter -->
+  <a-entity>
+    <a-obj-model src="#Jupiter" mtl="#Jupiter_material" position="0 0 2" scale="0.102763 0.102763 0.102763"></a-obj-model>
+    <a-animation attribute="rotation" dur="120000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+  </a-entity>
+  <a-torus radius="2" radius-tubular="0.0001" segments-tubular="128" rotation="90 0 0"></a-torus>
+
+  <!-- Saturn -->
+  <a-entity>
+    <a-obj-model src="#Saturn" mtl="#Saturn_material" position="0 0 2.5" scale="0.057753 0.057753 0.057753"></a-obj-model>
+    <a-animation attribute="rotation" dur="240000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+  </a-entity>
+  <a-torus radius="2.5" radius-tubular="0.0001" segments-tubular="128" rotation="90 0 0"></a-torus>
+
+  <!-- Uranus -->
+  <a-entity>
+    <a-obj-model src="#Uranus" mtl="#Uranus_material" position="0 0 3" scale="0.036739 0.036739 0.036739"></a-obj-model>
+    <a-animation attribute="rotation" dur="480000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+  </a-entity>
+  <a-torus radius="3" radius-tubular="0.0001" segments-tubular="256" rotation="90 0 0"></a-torus>
+
+  <!-- Neptune -->
+  <a-entity>
+    <a-obj-model src="#Neptune" mtl="#Neptune_material" position="0 0 3.3" scale="0.035596 0.035596 0.035596"></a-obj-model>
+    <a-animation attribute="rotation" dur="960000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+  </a-entity>
+  <a-torus radius="3.3" radius-tubular="0.0001" segments-tubular="256" rotation="90 0 0"></a-torus>
+
+</a-obj-model>
+
+
+<!-- Milkyway -->
+<a-sky id="image-360" radius="2000" src="#stars_milky_way"></a-sky>

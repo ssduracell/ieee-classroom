@@ -1,0 +1,51 @@
+<a-entity class="avatar" clickable>
+  <a-entity class="studentHead" position="0 1.6 0">
+    <a-sphere class="head"
+      color="#eac086"
+      scale="0.45 0.5 0.4"
+    ></a-sphere>
+    <a-entity class="face"
+      position="0 0.05 0"
+    >
+      <a-sphere class="eye"
+        color="#efefef"
+        position="0.16 0.1 -0.35"
+        scale="0.12 0.12 0.12"
+      >
+        <a-sphere class="pupil"
+          color="#000"
+          position="0 0 -1"
+          scale="0.2 0.2 0.2"
+        ></a-sphere>
+      </a-sphere>
+      <a-sphere class="eye"
+        color="#efefef"
+        position="-0.16 0.1 -0.35"
+        scale="0.12 0.12 0.12"
+      >
+        <a-sphere class="pupil"
+          color="#000"
+          position="0 0 -1"
+          scale="0.2 0.2 0.2"
+        ></a-sphere>
+      </a-sphere>
+    </a-entity>
+  </a-entity>
+  <a-entity class="studentBody">
+    <a-sphere class="body"
+              color="#000"
+              position="0 0.45 0.05"
+              scale="0.4 0.8 0.4"
+    ></a-sphere>
+    <a-sphere class="rhand"
+              color="#eac086"
+              position="0.5 0.65 -0.15"
+              scale="0.15 0.15 0.15"
+    ></a-sphere>
+    <a-sphere class="lhand"
+              color="#eac086"
+              position="-0.5 0.65 -0.15"
+              scale="0.15 0.15 0.15"
+    ></a-sphere>
+  </a-entity>
+</a-entity>

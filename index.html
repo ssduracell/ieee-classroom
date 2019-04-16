@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IEEE-Classroom — Login student</title>
+    <meta name="description" content="IEEE-Classroom">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      html, body {
+        height: 100%;
+      }
+      html {
+        display: table;
+        margin: auto;
+      }
+      body {
+        display: table-cell;
+        vertical-align: middle;
+        background: #222222;
+      }
+      /* Reset Select */
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        outline: 0;
+        box-shadow: none;
+        border: 0 !important;
+        background: #444444;
+        background-image: none;
+      }
+      /* Custom Select */
+      .select {
+        position: relative;
+        display: block;
+        width: 20em;
+        height: 4em;
+        line-height: 4;
+        background: #444444;
+        overflow: hidden;
+        border-radius: .25em;
+      }
+      select {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0 0 0 .5em;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 2em;
+      }
+      select::-ms-expand {
+        display: none;
+      }
+      /* Arrow */
+      .select::after {
+        content: '\25BC';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 1em;
+        background: #888888;
+        pointer-events: none;
+      }
+      /* Transition */
+      .select:hover::after {
+        color: #cccccc;
+      }
+      .select::after {
+        -webkit-transition: .25s all ease;
+        -o-transition: .25s all ease;
+        transition: .25s all ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <form action="student.html" method="get">
+        <div class="select">
+          <select name="student" onchange="this.form.submit()">
+            <option selected="selected">Kies je naam</option>
+            <option>James</option>
+            <option>Lisa</option>
+            <option>Sarah</option>
+            <option>David</option>
+            <option>Karen</option>
+            <option>Brian</option>
+            <option>Laura</option>
+            <option>Jason</option>
+            <option>Mark</option>
+            <option>Helen</option>
+          </select>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

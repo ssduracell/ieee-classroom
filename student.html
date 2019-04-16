@@ -1,0 +1,124 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IEEE-Classroom — Student</title>
+    <meta name="description" content="IEEE-Classroom — Student">
+
+    <!--A-frame-->
+    <script src="/js/aframe.min.js"></script>
+    <script src="/js/aframe-event-set-component.min.js"></script>
+    <script src="/js/aframe-template-component.min.js"></script>
+    <script src="/js/aframe-layout-component.min.js"></script>
+    <script src="/js/aframe-randomizer-components.min.js"></script>
+
+    <!--Networked-aframe-->
+    <script src="/js/socket.io.min.js"></script>
+    <script src="easyrtc/easyrtc.js"></script>
+    <script src="/js/networked-aframe.min.js"></script>
+
+    <!--Custom Javascript-->
+    <script src="/js/student.js"></script>
+    <script src="/js/solarsystem.js"></script>
+    <script src="/js/classroom.js"></script>
+    <script src="/js/clickable.js"></script>
+    <script src="/js/minigames.js"></script>
+  </head>
+  <body>
+    <a-scene networked-scene="adapter: EasyRTC; room: basic; debug: true; onConnect: initRoom; audio: true;" enter-vr-mode>
+      <a-assets>
+        <img id="turtle-thumb" src="/pictures/student/turtle.svg" crossorigin="anonymous" />
+        <img id="rabbit-thumb" src="/pictures/student/rabbit.svg" crossorigin="anonymous" />
+        <img id="hand-thumb" src="/pictures/student/hand.svg" crossorigin="anonymous" />
+        <img id="confused-thumb" src="/pictures/student/confused.svg" crossorigin="anonymous" />
+        <!--audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio-->
+
+        <!-- Templates -->
+        <template id="avatar-student">
+          <a-entity template="src: templates/student/student.template"></a-entity>
+        </template>
+        <template id="avatar-teacher" src="templates/teacher.template">
+          <a-entity template="src: templates/teacher/teacher.template"></a-entity>
+        </template>
+      </a-assets>
+
+      <!----------------------------------- SCENE ---------------------------------------------->
+      <a-entity id="scene" template="src: templates/scenes/minigames.template"></a-entity>
+
+      <!--------------------------------- STUDENT ---------------------------------------------->
+      <a-entity id="cameraRig">
+       <a-entity id="player" networked="template:#avatar-student;attachTemplateToLocal:false;" position="0 0.4 0" rotation="0 0 0" student>
+         <a-entity id="playerHead" class="studentHead" camera="near: 0.6" position="0 1.6 0" look-controls>
+           <a-sphere class="head"
+                     visible="false"
+                     color="#eac086"
+           ></a-sphere>
+           <a-cursor id="cursor" color="red">
+             <a-animation begin="click" easing="ease-in" attribute="scale" fill="backwards" from="0.1 0.1 0.1" to="1 1 1" dur="150"></a-animation>
+             <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale" from="1 1 1" to="0.1 0.1 0.1" dur="1500"></a-animation>
+           </a-cursor>
+         </a-entity>
+         <a-entity id="playerBody" visible="false">
+          <a-sphere class="body"
+                    color="red"
+                    position="0 0.45 0.05"
+                    scale="0.4 0.8 0.4"
+                    random-student-color
+                    handle-clicked
+          ></a-sphere>
+          <a-sphere class="rhand"
+                    color="#eac086"
+                    position="0.5 0.65 -0.15"
+                    scale="0.15 0.15 0.15"
+          ></a-sphere>
+          <a-sphere class="lhand"
+                    color="#eac086"
+                    position="-0.5 0.65 -0.15"
+                    scale="0.15 0.15 0.15"
+          ></a-sphere>
+        </a-entity>
+       </a-entity>
+     </a-entity>
+
+    </a-scene>
+
+    <script>
+      // Define custom schema for syncing avatar color, set by random-color
+      NAF.schemas.add({
+        template: '#avatar-student',
+        components: [
+          'position',
+          'rotation',
+          {
+            selector: '.studentHead',
+            component: 'rotation'
+          },
+          {
+            selector: '.body',
+            component: 'material',
+            property: 'color'
+          },
+          {
+            selector: '.rhand',
+            component: 'position'
+          }
+        ]
+      });
+      NAF.schemas.add({
+        template: '#avatar-teacher',
+        components: [
+          'position',
+          'rotation',
+          {
+            selector: '.avatarHead',
+            component: 'rotation'
+          }
+        ]
+      });
+      function initRoom () {
+        console.log("----->initRoom", new Date());
+        playTagger();
+        NAF.connection.broadcastDataGuaranteed( "hallo", person.trim() );
+      }
+    </script>
+  </body>
+</html>

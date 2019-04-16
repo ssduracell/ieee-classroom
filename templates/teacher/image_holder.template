@@ -1,0 +1,4 @@
+<a-entity class="image_holder"
+  geometry="primitive: plane; height: .2; width: .2"
+  material="shader: flat; src: ${thumb}; transparent: true">
+</a-entity>

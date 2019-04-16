@@ -1,0 +1,255 @@
+# Blender MTL File: 'classroom_Wout_Material.blend'
+# Material Count: 25
+
+newmtl None
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd textures\_baseTextures\base_brownWood.jpg
+
+newmtl None_base_frostedGlass.png
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd textures\_baseTextures\base_frostedGlass.png
+
+newmtl None_base_paintedPlasterWall.jpg
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd textures\_baseTextures\base_paintedPlasterWall.jpg
+
+newmtl None_base_wallPaint.jpg
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd textures\_baseTextures\base_wallPaint.jpg
+
+newmtl None_base_woodFloor.jpg
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd textures\_baseTextures\base_woodFloor.jpg
+
+newmtl None_childDrawing_01.jpg
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd textures\childDrawing\childDrawing_01.jpg
+
+newmtl None_childDrawing_04.jpg
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd textures\childDrawing\childDrawing_04.jpg
+
+newmtl None_cork.jpg
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd textures\cork.jpg
+
+newmtl None_white_FFFFFF.jpg
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd textures\white_FFFFFF.jpg
+
+newmtl None_woodPlanks.jpg
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd textures\woodPlanks.jpg
+
+newmtl beigePaintedwood
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.166910 0.158455 0.139718
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures\_baseTextures\base_paintedPlasterWall.jpg
+
+newmtl blackBoard
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures\blackBoard.png
+
+newmtl blackPaintedWood
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.036149 0.034988 0.033849
+Ks 0.041320 0.041320 0.041320
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures\_baseTextures\base_darkWood.png
+
+newmtl boardFrame
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures\_baseTextures\base_paintedPlasterWall.jpg
+
+newmtl drawing.001
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.509082 0.509082 0.509082
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures\childDrawing\childDrawing_01.jpg
+
+newmtl drawing.002
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.509082 0.509082 0.509082
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures\childDrawing\childDrawing_03.jpg
+
+newmtl drawing.003
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.509082 0.509082 0.509082
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures\childDrawing\childDrawing_07.png
+
+newmtl drawing.005
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.509082 0.509082 0.509082
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures\childDrawing\childDrawing_05.jpg
+
+newmtl drawing.006
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.509082 0.509082 0.509082
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures\childDrawing\childDrawing_06.jpg
+
+newmtl drawing.007
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.509082 0.509082 0.509082
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures\childDrawing\childDrawing_08.png
+
+newmtl plaster
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures\lightBlue.png
+
+newmtl porcelainHandle
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl woodPlanks
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.254837 0.238342 0.150972
+Ks 0.005883 0.005883 0.005883
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures\woodPlanks.jpg
+
+newmtl worldMap
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures\europeMap.png
+
+newmtl yellowLetter
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.373963 0.083812
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2

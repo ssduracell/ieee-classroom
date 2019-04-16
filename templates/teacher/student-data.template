@@ -1,0 +1,7 @@
+<a-entity id="${name_concatenated}-hand" template="src: templates/teacher/image_holder.template"  data-thumb="#hand-thumb" visible="false"></a-entity>
+<a-entity template="src: templates/teacher/text_link.template" data-id="${name_concatenated}" data-text="${name}" data-text_position="1 0 0" data-color="white" position="0.85 0 0"></a-entity>
+<a-entity position="1.675 0 0">
+  <a-entity id="${name_concatenated}-turtle" template="src: templates/teacher/image_holder.template" data-thumb="#turtle-thumb" visible="false"></a-entity>
+  <a-entity id="${name_concatenated}-confused" template="src: templates/teacher/image_holder.template" data-thumb="#confused-thumb" visible="false"></a-entity>
+  <a-entity id="${name_concatenated}-rabbit" template="src: templates/teacher/image_holder.template" data-thumb="#rabbit-thumb" visible="false"></a-entity>
+</a-entity>
